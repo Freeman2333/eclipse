@@ -1,0 +1,805 @@
+@import config
+@import _slick.css
+
+
+// CUSTOM USER STYLES & IMPORTS
+
+img
+	max-width: 100%
+section
+	padding: 55px 0
+
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+.container
+	max-width: 1170px
+	width: 97%
+	margin: 0 auto
+
+.btn
+	display: inline-block
+	background: $accent
+	text-transform: uppercase
+	text-align: center
+	padding: 10px 40px
+	font-size: 15px
+	border-radius: 5px
+	color: #fff
+	box-shadow: 0px 0px 5px 0px rgba(1, 1, 1, 0.75)
+	border: none
+	max-width: 100%
+
+	&:hover
+		text-decoration: none
+		color: #fff
+		box-shadow: none
+
+.large-title
+	font-size: 50px
+
+.form
+	padding: 60px 25px
+	box-shadow: 0px 0px 10px 0px rgba(1, 1, 1, 0.75)
+
+.form-title
+	font-size: 22px
+	font-weight: 300
+	display: inline-block
+	line-height: 24px
+	color: $accent
+
+.form-input-wrapper
+	margin-bottom: 10px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: calc(50% - 5px)
+		left: 15px
+		background:  url('../images/right-chevron.svg') no-repeat
+		background-size: cover
+		display: block
+		height: 8px
+		width: 8px
+
+.form-textarea-wrapper
+	&:before
+		top: 14px
+
+.form-input
+	height: 40px
+	line-height: 40px
+	width: 100%
+	border: 1px solid $textcolor
+	padding: 0 30px
+	border-radius: 3px
+	max-width: 100%
+	font-size: 14px
+	&::placeholder
+		font-size: 14px
+
+textarea
+	width: 100%
+	border: 1px solid $textcolor
+	padding: 0 30px
+	padding-top: 8px
+	border-radius: 3px
+	font-size: 14px
+	&::placeholder
+		font-size: 14px
+.form-text
+	font-size: 15px
+	font-weight: 300
+
+// header
+
+.header
+	padding-top: 30px
+	display: inline-flex
+	justify-content: space-between	
+	flex-wrap: wrap
+	width: 100%
+	margin-bottom: 65px
+
+.header-content
+	text-align: right
+
+.header-title
+	color: #fff
+	text-transform: uppercase
+	font-size: 25px
+
+.languages-menu
+	font-size: 18px
+	list-style-type: none
+	display: flex
+	justify-content: flex-end
+	font-weight: 300
+	margin-bottom: 30px
+
+.languages-item
+	margin-left: 20px
+	&.active
+		font-weight: 700
+	&:hover .languages-link
+		color: #fff
+
+.languages-link
+	color: #fff
+
+.header-title
+	display: block
+	margin-bottom: 15px
+
+.header-contacts
+	margin-bottom: 25px
+	a
+		color: $accent
+		display: block
+		text-decoration: none
+
+.header-phone
+	font-size: 35px
+
+// banner
+
+.banner
+	background:  url("../images/content/header-bg.jpg") 80% -10% no-repeat 
+	background-size: cover
+	padding-top: 0
+	position: relative
+	&:after 
+		content: ''
+		display: block
+		position: absolute
+		width: 100%
+		height: 21px
+		bottom: 0
+		background: url('../images/content/banner/banner-bottom.png')
+
+.banner-content
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.banner-title
+	color: $accent
+	font-weight: 700
+	text-transform: uppercase
+	margin-bottom: 100px
+	*
+		display: block
+
+.banner-tiitle__small--bold
+	font-size: 22px
+	margin-bottom: 5px
+
+.banner-tiitle__small
+	font-weight: 300
+	font-size: 30px
+
+.banner-left
+	flex-basis: 65%
+
+.banner-right
+	flex-basis: 30%
+
+.banner-advantages
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	text-align: center
+	font-size: 18px
+
+.banner-advantage
+	margin-bottom: 20px
+	display: flex
+	flex-direction: column
+	align-items: center
+	flex-basis: 30%
+
+.banner-advantage__img
+	margin-bottom: 15px
+
+.banner-form
+	background: url('../images/content/banner/form-bg-1.png') 0 0 no-repeat 
+	background-size: cover
+	width: 288px
+	border-right: 1px solid $accent
+	.btn 
+		margin-top: 35px
+		padding: 10px 15px
+	.form-text
+		margin-bottom: 30px
+		line-height: 1.5
+
+
+	.form-title
+		margin-bottom: 30px
+
+// menu
+
+.menu-section
+	padding: 0
+
+.menu
+	padding: 15px 0
+	display: flex
+	justify-content: flex-end
+
+.menu-link
+	color: $textcolor
+
+.menu-item
+	margin-right: 46px
+	&:last-child
+		margin-right: 0
+
+.menu-item
+	&.active, &:hover
+		.menu-link
+			color: $accent
+			text-decoration: none	
+
+// about
+
+.about-section
+	color: #fff
+	text-align: center
+	background: url('../images/content/about/about-bg.jpg') 0 80%
+	background-position-x: 30%
+	background-size: cover
+.about-content
+	max-width: 680px
+	margin-left: auto
+
+.about-text
+	font-weight: 300
+	margin-bottom: 30px
+
+.about-title
+	font-weight: 100
+
+// technology
+
+.technology-section
+	padding-bottom: 0
+	position: relative
+	.container:after
+		content: ''
+		display: block
+		width: 100%
+		height: 1px
+		background: #999
+
+.technology-title
+	font-weight: 300
+	color: $accent
+	margin-bottom: 25px
+	*
+		display: block
+
+.technology-title--small
+	font-size: 35px
+
+.technology-title--bold
+	font-size: 30px
+	text-transform: uppercase
+	font-weight: 700
+
+.technology-text
+	font-weight: 300
+	margin-bottom: 30px
+
+.technology-text--red
+	color: $accent
+	
+
+.translator
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	margin-bottom: 15px
+
+.translator-device
+	margin-right: 30px
+
+.translator-right
+	flex: 1
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+
+.translator-text
+	margin-bottom: 75px
+	display: inline-block
+	max-width: 350px
+
+.dots
+	display: flex
+
+.dot
+	width: 10px
+	height: 10px
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-right: 10px
+	border-radius: 50%
+	&.active
+		background: $accent
+.dot__inner
+	width: 5px
+	margin-left: 1px
+	margin-bottom: 1px
+	height: 5px
+	border: 1px solid #b6b6b6
+	border-radius: 50%
+
+// benefits
+
+.benefits-section
+	.btn
+		padding: 15px 40px
+		margin: 0 auto
+.benefit-title
+	text-transform: uppercase
+	font-size: 30px
+	font-weight: 700
+	margin-bottom: 50px
+
+.benefits
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+
+.benefit-item
+	flex-basis: 300px
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-bottom: 30px
+
+.benefit-btn
+	display: flex
+	justify-content: center
+
+.benefit-img
+	margin-bottom: 30px
+
+.benefit-text
+	font-weight: 500
+
+.clients
+	padding-top: 55px
+	position: relative
+	color: $accent
+	border-top: 1px dashed black
+
+.clients
+	.container
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+
+
+.clients-number
+	font-weight: 300
+	font-size: 130px
+	margin-right: 60px
+	flex-basis: 30%
+	padding-left: 96px
+
+.clients-title
+	font-weight: 300
+	flex-basis: 60%	
+	*
+		display: block
+.clients-title--thin
+	font-size: 32px
+	margin-bottom: 5px
+
+.clients-title--bold
+	font-weight: 700
+	font-size: 25px
+
+// operate
+
+.operate-section
+	padding-top: 120px
+	border-bottom: 1px dashed black
+	background:  url('../images/content/operate/operate-bg.jpg') no-repeat
+	background-size: cover
+	background-position: center
+	
+
+.operate-info
+	padding-left: 96px
+
+.operate-title
+	color: $accent
+	font-size: 25px
+	margin-bottom: 30px
+
+.operate-text
+	font-size: 18px
+	max-width: 770px	
+	margin-bottom: 50px
+
+.operate-dots
+	justify-content: center
+	margin-bottom: 70px
+
+.operate-form
+	display: flex
+	margin: 0 auto
+	max-width: 976px
+	border-bottom: 1px solid $accent
+	width: 100%
+	flex-wrap: wrap
+	justify-content: space-between
+	padding: 35px 60px
+	background: url("../images/content/operate/operate-form.png")
+	background-size: cover
+
+.operate-form__left
+	flex-basis: 370px
+	.form-title
+		margin-bottom: 35px
+.operate-form__center,
+.operate-form__right
+	flex-basis: 220px
+	max-width: 220px
+
+input[type="file"] 
+    display: none
+
+.operate-form__right
+	text-align: right
+	padding-top: 10px
+	.btn
+		width: 100%
+
+.form-input-file
+	color: $accent
+	font-size: 14px
+	cursor: pointer
+	text-align: center
+	width: 100%
+	padding-right: 30px
+	&:before 
+		left: calc(100% - 60px)
+		height: 14px
+		width: 13px
+		top: calc(50% - 11px)
+	label
+		cursor: pointer
+
+.operate-form__loader
+	width: 42px
+	height: 40px
+	font-size: 12px
+	background: url('../images/content/operate/loader.png') no-repeat
+	text-align: center
+	line-height: 40px
+	margin: 0 auto 15px
+
+// analysis
+
+.analysis-title
+	font-weight: 300
+	padding-bottom: 40px
+	position: relative
+	color: $accent
+	line-height: 46px
+	margin-bottom: 30px
+	&:after 
+		content: ''
+		position: absolute
+		display: block
+		bottom: 0
+		left: 0
+		width: 415px
+		height: 1px
+		background: #999
+	*
+		display: block
+
+.analysis-title__thin
+	font-size: 35px
+
+.analysis-text
+	font-size: 18px
+	line-height: 40px
+	padding-bottom: 35px
+	margin-bottom: 45px
+	position: relative
+	&:after 
+		content: ''
+		position: absolute
+		display: block
+		bottom: 0
+		left: 0
+		width: 415px
+		height: 1px
+		background: #999
+
+.analysis-items
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+.analysis-item
+	flex-basis: 30%
+	margin-bottom: 15px
+	text-align: center
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-direction: column
+	&:first-child
+		.analysis-pic
+			margin-bottom: 49px
+.analysis-pic
+	margin-bottom: 30px
+
+.analysis-item__text
+	margin-bottom: 45px
+
+.reason-section
+	background: url('../images/content/reasons/reason-bg.jpg')
+	background-size: cover
+	.container	
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+.reason-title
+	font-weight: 300
+	margin-bottom: 30px
+	line-height: 46px
+	color: $accent
+	*
+		display: block
+
+.reason-title--smaller
+	font-size: 35px
+	line-height: 1.2
+
+.reason-title--small
+	font-size: 30px
+	line-height: 1.2
+
+.reasons-text
+	margin-bottom: 20px
+	color: #000
+
+.reason-gallery
+	width: 780px
+	height: 780px
+	margin-right: 40px
+	display: grid
+	grid-template-columns: repeat(3,1fr)
+	grid-template-row: repeat(3,1fr)
+	grid-template-areas: "one one two" "three five six" "seven five eight"
+
+.reason-img
+	width: 100%
+	max-width: 100%
+	height: 100%
+
+.reason-img-1
+	grid-area: one
+
+.reason-img-2
+	grid-area: two
+
+.reason-img-3
+	grid-area: three
+
+.reason-img-4
+	grid-area: five
+
+.reason-img-5
+	grid-area: six 
+
+.reason-img-6
+	grid-area: 
+
+.reasons-info
+	max-width: 340px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+.reason-form
+	height: 480px
+	padding: 80px 20px 30px
+	border: 1px solid $accent
+	width: 280px
+	background: url('../images/content/reasons/reason-form.png')
+	.btn 
+		margin-top: 30px
+		padding-left: 7px
+		padding-right: 7px
+		width: 100%
+
+	.form-title
+		margin-bottom: 80px
+
+// workers
+
+.workers-info
+	display: flex
+	margin-bottom: 60px
+	align-items: flex-end
+.workers-title
+	font-weight: 300
+	color: $accent
+	margin-right: 100px
+	line-height: 1
+	span 
+		display: block
+
+.workers-title--smaller
+	font-size: 35px
+	line-height: 0.9
+
+.workers-title--small
+	font-size: 30px
+	line-height: 1.2
+
+.worker-top
+	margin-bottom: 20px
+
+.worker-info
+	font-size: 15px
+	span 
+		display: block
+
+.worker-language
+	font-weight: 300
+
+.workers-slider
+	position: relative
+	max-width: 1100px
+	margin-left: 65px
+	img
+		height: 380px
+
+.worker-nav
+	height: 15px
+	position: absolute
+	z-index: 100
+	cursor: pointer
+	bottom: 13px
+	width: 13px
+	background: url('../images/right-chevron.svg')
+	background-size: cover
+
+.woker-nav__prev
+	transform: rotate(180deg)
+	left: -60px
+
+.woker-nav__next
+	right: 0
+
+// remain-section
+
+.remain-section
+	position: relative
+	padding-bottom: 0
+.map 
+	position: relative
+	height: 550px
+	&:before 
+		content: ''
+		position: absolute
+		display: block
+		width: 70%
+		height: 1px
+		background: $accent
+		top: 0
+		left: 15%
+	&:after
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		z-index: 10
+		width: 900px
+		display: block
+		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.65) 8%, rgba(255,255,255,0.65) 100%)
+		height: 450px
+
+.remain-content
+	position: absolute
+	top: 80px
+	right: 10%
+	z-index: 100
+	display: flex
+
+.remain-contacts
+	margin-right: 20px
+	font-size: 22px
+	padding-top: 250px
+	text-align: right
+	*
+		display: block
+		color: $accent
+		&:hover
+			text-decoration: none
+			color: $accent
+
+.remain-phone
+	font-weight: 500
+	font-size: 25px
+
+.remain-email
+	margin-bottom: 20px
+
+.remain-form
+	width: 282px
+	padding: 50px 25px 30px
+	background: url('../images/content/remain.png')
+	border-bottom: 1px solid $accent
+	.btn	
+		width: 100%
+	.form-title
+		margin-bottom: 20px
+
+.remain-title
+	font-size: 25px
+	font-weight: 500
+	margin-bottom: 20px
+
+.remain-textarea
+	height: 115px
+	resize: none
+
+.footer
+	background: $accent
+
+	color: white
+	.container
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+.social
+	display: flex
+	justify-content: space-between
+	align-items: center
+	svg 
+		height: 11px
+		width: 11px
+		path
+			fill: $accent
+
+.social-item
+	width: 20px
+	height: 20px
+	background: white 
+	border-radius: 50%
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-right: 5px
+
+.social-link
+	display: block
+
+.eclipse
+	font-size: 20px
+	line-height: 40px
+.done
+	font-size: 300px
+	font-size: 12px
+	line-height: 36px
+
+@import media
+

@@ -1,0 +1,195 @@
+@media only screen and (max-width : 1200px)
+	.reason-gallery
+		grid-template-columns: repeat(2,1fr)
+		grid-template-rows: auto
+		width: auto
+		grid-template-areas: "one one " "two three" " five three" "six seven"
+
+	.reason-img-1
+		grid-area: one
+
+	.reason-img-2
+		grid-area: two
+
+	// .reason-img-3
+	// 	grid-area: three
+
+	.reason-img-4
+		grid-area: three
+
+	.reason-img-5
+		grid-area: six 
+
+	.reason-section .container
+		justify-content: space-around
+		text-align: center
+
+@media only screen and (max-width : 1000px)
+	.about-content
+		max-width: 100%
+
+	.clients
+		text-align: center
+
+	.operate-info
+		padding-left: 0
+		text-align: center
+
+	.operate-text
+		max-width: 100%
+
+	.operate-form
+		background: rgba(white, 0.7)
+		border: 1px solid $accent
+		flex-direction: column
+		align-items: center
+		.form-title
+			margin-bottom: 20px
+		>*
+			flex-basis: 100%
+			max-width: 100%
+	.operate-form__left
+		margin-bottom: 30px
+
+	.operate-form__center
+		width: 100%
+
+	.form-input-file
+		width: 100%
+
+	.form-input-file:before 
+    left: calc(100% - 20px)
+	
+	.operate-form__right
+		width: 100%
+
+	.analysis-item
+		flex-basis: 40%
+
+@media only screen and (max-width : 950px)
+
+	.reason-gallery
+		margin-bottom: 30px
+		margin-right: 0
+
+	.reasons-info
+		text-align: center
+
+	.reason-form
+		margin: 0 auto
+
+@media only screen and (max-width : 850px)
+	.banner-left,.banner-right
+		flex-basis: 100%
+		text-align: center
+	
+	.banner-form
+		margin: 0 auto
+		margin-bottom: 30px
+
+	.technology-section
+		text-align: center
+	
+	.analysis-section
+		text-align: center
+		*:after
+			width: 100%
+
+@media only screen and (max-width : 750px)
+
+	.menu
+		flex-direction: column
+		align-items: center
+	.menu-item
+		margin-right: 0
+		margin-bottom: 10px
+
+	.translator
+		flex-direction: column
+		align-items: center
+
+	.translator-device
+		margin-right: 0
+		margin-bottom: 30px
+
+	.translator-text
+		margin-bottom: 30px
+
+	.translator-dots
+		justify-content: center
+
+	.remain-content
+		flex-direction: column
+		position: static
+		align-items: center
+		margin-bottom: 20px
+		
+	.map
+		margin-bottom: 20px
+		&:after 
+			display: none
+
+	.remain-contacts
+		text-align: center
+
+		padding-top: 0
+		margin-bottom: 20px
+
+@media only screen and (max-width : 700px)
+
+	.header
+		flex-direction: column
+		align-items: center
+
+	.header-content
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	.analysis-item
+		flex-basis: 100%
+		margin: 0 auto
+		padding-bottom: 20px
+		margin-bottom: 20px
+		border-bottom: 1px solid #999
+
+	.worker
+		text-align: center
+	.worker-top
+		margin: 0 auto 15px
+		img
+			margin: 0 auto
+
+	.workers-title
+		margin-right: 30px
+
+@media only screen and (max-width : 550px)
+
+	.workers-info
+		flex-direction: column
+		align-items: center
+		text-align: center
+		margin-bottom: 30px
+
+	.workers-title
+		margin-right: 0
+
+@media only screen and (max-width : 450px)
+
+	.banner-advantage
+		flex-basis: 45%
+
+
+
+@media only screen and (max-width : 350px)
+
+	.banner-title
+		font-size: 40px
+
+
+
+
+
+
+
