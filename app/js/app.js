@@ -27,4 +27,15 @@ $(document).ready(function(){
 			}
 		}]
 	});
+
+	$(".js-operate-slider").slick({
+		infinite: true,
+		dots: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		customPaging: function() {
+			return '<div class="operate__dot dot"><div class="dot__inner"></div></div>'},
+		arrows:  false,
+		appendDots: '.operate-dots'
+	});
 });

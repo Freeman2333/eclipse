@@ -1,6 +1,7 @@
 @media only screen and (max-width : 1200px)
 	.reason-gallery
 		grid-template-columns: 1fr 1fr
+		height: auto
 		grid-template-rows: auto
 		width: auto
 		grid-template-areas: "one one " "two three" " five three" "six seven"
@@ -19,6 +20,11 @@
 
 	.reason-img-5
 		grid-area: six 
+
+	.reason-img
+		width: auto
+		// max-width: auto
+		height: auto
 
 	.reason-section .container
 		justify-content: space-around
@@ -47,6 +53,7 @@
 			margin-bottom: 20px
 		>*
 			flex-basis: 100%
+			width: 100%
 			max-width: 100%
 	.operate-form__left
 		margin-bottom: 30px
@@ -65,6 +72,8 @@
 
 	.analysis-item
 		flex-basis: 40%
+		width: 40%
+		max-width: 40%
 
 @media only screen and (max-width : 950px)
 
@@ -78,9 +87,22 @@
 	.reason-form
 		margin: 0 auto
 
+	.clients .container
+		flex-direction: column
+		align-items: center
+		*
+			width: auto
+			max-width: 100%
+
+	.clients-number
+		margin-right: 0	
+		padding-left: 0	
+
 @media only screen and (max-width : 850px)
 	.banner-left,.banner-right
 		flex-basis: 100%
+		width: 100%
+		max-width: 100%
 		text-align: center
 	
 	.banner-form
@@ -135,6 +157,9 @@
 		padding-top: 0
 		margin-bottom: 20px
 
+	.dots 
+		justify-content: center	
+
 @media only screen and (max-width : 700px)
 
 	.header
@@ -149,6 +174,8 @@
 
 	.analysis-item
 		flex-basis: 100%
+		width: 100%
+		max-width: 100%
 		margin: 0 auto
 		padding-bottom: 20px
 		margin-bottom: 20px
@@ -179,6 +206,8 @@
 
 	.banner-advantage
 		flex-basis: 45%
+		width: 45%
+		max-width: 45%
 
 
 
